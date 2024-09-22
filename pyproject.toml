@@ -9,7 +9,7 @@ description = "A Flake8 plugin to check for PySpark withColumn usage in loops"
 authors = [
     {name = "Sem Sinchenko", email = "ssinchenko@apache.org"},
 ]
-license = "MIT"
+license = "Apache-2.0"
 readme = "README.md"
 classifiers = [
     "Framework :: Flake8",
