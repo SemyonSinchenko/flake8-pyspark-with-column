@@ -3,7 +3,10 @@
 A flake8 plugin that detects of usage `withColumn` in a loop or inside `reduce`. From the PySpark documentation about `withColumn` method:
 
 ```
-  This method introduces a projection internally. Therefore, calling it multiple times, for instance, via loops in order to add multiple columns can generate big plans which can cause performance issues and even StackOverflowException. To avoid this, use select() with multiple columns at once.
+  This method introduces a projection internally.
+  Therefore, calling it multiple times, for instance, via loops in order to add multiple columns
+  can generate big plans which can cause performance issues and even StackOverflowException.
+  To avoid this, use select() with multiple columns at once.
 ```
 
 ## Rules
