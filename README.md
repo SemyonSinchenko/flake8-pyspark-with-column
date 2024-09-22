@@ -1,5 +1,7 @@
 # Flake8-pyspark-with-column
 
+`pip install flake8-pyspark-with-column`
+
 A flake8 plugin that detects of usage `withColumn` in a loop or inside `reduce`. From the PySpark documentation about `withColumn` method:
 
 ```
