@@ -18,3 +18,9 @@ This plugin contains the following rules:
 
 - `PSPRK001`: Usage of withColumn in a loop detected
 - `PSPRK002`: Usage of withColumn iside reduce is detected
+
+## Usage
+
+`flake8 --select PSPRK001,PSPRK002 %your-code-here%`
+
+![screenshot of how it works](/static/usage.png)
