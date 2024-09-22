@@ -11,6 +11,9 @@ jobs:
   deploy:
 
     runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/flake8-pyspark-with-column
 
     steps:
     - uses: actions/checkout@v4
