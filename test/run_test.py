@@ -2,7 +2,7 @@ import subprocess
 from pathlib import Path
 from subprocess import PIPE
 
-ERR1 = "PSPRK001 Usege of withColumn in a loop detected, use withColumns or select instead!"
+ERR1 = "PSPRK001 Usage of withColumn in a loop detected, use withColumns or select instead!"
 ERR2 = "PSPRK002 Usage of withColumn in reduce detected, use withColumns or select instead!"
 
 

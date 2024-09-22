@@ -24,8 +24,8 @@ class Plugin:
                 for child in ast.walk(node):
                     if self._contains_with_column(child):
                         yield (
-                            node.lineno,
-                            node.col_offset,
+                            child.lineno,
+                            child.col_offset,
                             "PSPRK001 Usage of withColumn in a loop detected, use withColumns or select instead!",
                             type(self),
                         )
