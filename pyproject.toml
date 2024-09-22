@@ -1,10 +1,10 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
 name = "flake8-pyspark-with-column"
-version = "0.0.1"
+dynamic = ["version"]
 description = "A Flake8 plugin to check for PySpark withColumn usage in loops"
 authors = [
     {name = "Sem Sinchenko", email = "ssinchenko@apache.org"},
@@ -46,3 +46,9 @@ include = [
     "README.md",
     "LICENSE",
 ]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.version.raw-options]
+version_scheme = "no-guess-dev"
