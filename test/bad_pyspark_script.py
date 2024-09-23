@@ -19,3 +19,13 @@ if __name__ == "__main__":
 
     # The same problem appears if withColumn is called inside the reduce body
     data = reduce(lambda df, i: df.withColumn(f"f{i}", i * i), range(100), data)
+
+    # withColumnRenamed
+    for col in data.columns:
+        data = data.withColumnRenamed(col, f"{col}_renamed")
+
+    # Test a case of nested call
+    for i in range(100):
+        for j in range(100):
+            data = data.withColumn(f"{i}-{j}", i * j)
+    
